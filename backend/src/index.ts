@@ -13,7 +13,7 @@ wss.on("connection", (socket)=>{
     // allSockets.push(socket)
     userCount += 1;
     // for(let i = 0 
-    console.log("User connected #"+   socket);
+    console.log("User connected #"+   userCount);
 
     socket.on("message", (message)=>{
         console.log("hellooo", message)
@@ -24,6 +24,7 @@ wss.on("connection", (socket)=>{
              socket,
              room : parsedMessage.payload.room   
             })
+            console.log("User joined the room"+ parsedMessage.payload.room)
         }
         if(parsedMessage.type == "chat"){
             let currentUserRoom = null;
@@ -38,11 +39,7 @@ wss.on("connection", (socket)=>{
                 }
             }
         }
-        
     })
-    // socket.on("disconnect", ()=>{
-    //         allSockets = allSockets.filter( x => x != socket);
-    // })
 })
 
 

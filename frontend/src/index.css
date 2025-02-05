@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme{
+  --color-smokyBlack : #0B0A07;
+  --color-gunmetal :#293132;
+  --color-raisinBlack : #231F20;
+  --color-linen : #EFE6DD;
+
+}
