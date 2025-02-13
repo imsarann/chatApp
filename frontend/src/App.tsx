@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Chat from "./Chat"
 
 
@@ -9,6 +10,19 @@ function App() {
 
     </div>
   )
+=======
+import Chat from "./components/Chat"
+
+function App() {
+  return (
+  <div className="bg-black min-h-screen flex justify-center items-center">
+    <div className="">
+    <Chat/>
+    </div>
+  </div>
+  )
+  
+>>>>>>> ed5f5aa (frontend initiated)
 }
 
 export default App
