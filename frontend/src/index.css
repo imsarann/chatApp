@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@theme{
+  --color-onyx : #403F4C;
+}
