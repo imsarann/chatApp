@@ -1,16 +1,17 @@
-import Chat from './components/Chat'
+import Landing from './components/Landing';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-
+import Chat from './components/Chat';
 function App() {
 
   return (
-    <div>
-      <Navbar/>
-    <div className='bg-black  min-h-screen flex justify-center items-center'>
-      <Chat/>
-
-    </div>
-    </div>
+    <BrowserRouter>
+    <Navbar/>
+      <Routes>
+        <Route path="/" element={<Landing />}/>
+        <Route path="/chat" element={<Chat />}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
